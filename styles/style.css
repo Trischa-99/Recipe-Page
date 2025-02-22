@@ -1,0 +1,162 @@
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+
+    --brown-800: #854632;
+
+    --white: #FFFFFF;
+}
+body {
+    background-color: var(--stone-100);
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--stone-900);
+    margin-bottom: 24px;
+}
+h2 {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--brown-800);
+    margin-bottom: 24px;
+}
+h3 {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--rose-800);
+    margin: 0 0 8px 0;
+}
+p,
+li,
+td {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--stone-600);
+}
+span,
+.nutrition {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--stone-600);
+}
+.nutrition {
+    color: var(--brown-800);
+}
+
+article {
+    vertical-align: middle;
+    width: 736px;
+    margin: 128px auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 24px;
+}
+hr {
+    margin: 32px 0;
+    color: var(--stone-150);
+    height: 1px;
+}
+img {
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.container-time {
+    padding: 24px;
+    background-color: var(--rose-50);
+    border-radius: 12px;
+    margin: 32px 0;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-left: 20px;
+    padding: 8px 0 0 20px;
+}
+li::marker {
+    font-size: 12px;
+    color: var(--brown-800);
+}
+.container-time li::marker {
+    color: var(--rose-800);
+}
+
+
+.container-instructions li::marker {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.container-nutrition p {
+    margin-bottom: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+tr {
+    border-top: 1px solid var(--stone-150);
+}
+tr:first-child {
+    border-top: none;
+}
+td {
+    border: none !important;
+    padding: 12px 32px;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        background-color: var(--white);
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    article {
+        vertical-align: middle;
+        width: 100%;
+        margin: 0;
+        background-color: var(--white);
+        padding: 0;
+        border-radius: 0;
+    }
+    section,
+    header{
+        margin: 32px 32px;
+    }
+    hr {
+        margin: 0 32px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-bottom: 50px;
+    }
+
+    .container-time {
+        margin: 32px 32px;
+    }
+}
